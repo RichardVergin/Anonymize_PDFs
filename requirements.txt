@@ -3,5 +3,5 @@ azure-core
 gliner
 pillow
 pypdf
-re
+regex
 reportlab
