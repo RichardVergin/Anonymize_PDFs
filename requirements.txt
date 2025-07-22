@@ -1,0 +1,7 @@
+azure-ai-documentintelligence
+azure-core
+gliner
+pillow
+pypdf
+re
+reportlab
