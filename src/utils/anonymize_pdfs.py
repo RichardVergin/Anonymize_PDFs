@@ -12,7 +12,6 @@ def main(directory, filename, filename_output, endpoint, key, model, add_black_b
         endpoint=endpoint,
         key=key
     )
-    # layout = layout[0:1]
    
     """anonymize text within layout"""
     layout_anonymized = copy.deepcopy(layout)
@@ -28,8 +27,6 @@ def main(directory, filename, filename_output, endpoint, key, model, add_black_b
                 layout_anonymized[i]['lines'][j]['content'] = line_anonymized
  
     """create pdf and store it"""
-    # filename_output = remove_file_extension(filename)
-    # filename_output = filename_output + '_anonymized.pdf'
     print(f'storing anonymized pdf: {filename_output}')
     draw_anonymized_pdf(
         layout_anonymized=layout_anonymized,
